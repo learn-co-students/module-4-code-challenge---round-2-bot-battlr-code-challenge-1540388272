@@ -19,6 +19,13 @@ const BotCard = (props) => {
       botType = <div />;
   }
 
+  // this code works - below is my attempt at the Refactor Deliverable #4
+  // const handleOnClick = (id) => {
+  //   // console.log('click')
+  //   return props.enlistRobot(bot.id)
+  // }
+
+  // Refactor Deliverable #4
   const handleOnClick = (id) => {
     // console.log('click')
     return props.enlistRobot(bot.id)

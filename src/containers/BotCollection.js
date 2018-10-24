@@ -12,6 +12,7 @@ const BotCollection = (props) => {
     return (
       <BotCard
         key={bot.id}
+        
         bot={bot}
         id={bot.id}
         enlistRobot={props.enlistRobot}
