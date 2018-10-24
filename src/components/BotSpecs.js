@@ -19,6 +19,16 @@ const BotSpecs = props => {
       botType = <div />;
   }
 
+  const handleOnClicktoGoBack = () => {
+    console.log('click')
+    // return props.hideRobotDetails()
+  }
+
+  const handleOnClicktoEnlistRobot = (id) => {
+    console.log('click')
+    // return props.enlistRobot(bot.id)
+  }
+
   return (
     <div className="ui segment">
       <div className="ui two column centered grid">
@@ -60,7 +70,7 @@ const BotSpecs = props => {
             </div>
             <button
               className="ui button fluid"
-              onClick={() =>
+              onClick={(handleOnClicktoGoBack) =>
                 console.log('connect this to a function that shows all bots')
               }
             >
@@ -68,7 +78,7 @@ const BotSpecs = props => {
             </button>
             <button
               className="ui button fluid"
-              onClick={() =>
+              onClick={(handleOnClicktoEnlistRobot) =>
                 console.log(
                   "connect this to a function that adds this bot to your bot army list"
                 )
